@@ -27,7 +27,7 @@ function Home() {
         formData.append('image', image);
 
         try {
-            const response = await axios.post('http://localhost:9177/api/upload', formData, {
+            const response = await axios.post('https://mushroom-backend.onrender.com/api/upload', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
@@ -52,7 +52,7 @@ function Home() {
         formData.append('image', image);
 
         try {
-            const response = await axios.post('http://localhost:9177/api/addMushroom', formData, {
+            const response = await axios.post('https://mushroom-backend.onrender.com/api/addMushroom', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
